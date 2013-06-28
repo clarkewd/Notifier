@@ -23,7 +23,6 @@
 @synthesize textView = _textView;
 @synthesize resetButton = _resetButton;
 @synthesize openGmailButton = _openGmailButton;
-@synthesize audioAlertCheckbox = _audioAlertCheckbox;
 
 
 #pragma mark -
@@ -300,12 +299,6 @@
         [self.textView setAlignment:NSLeftTextAlignment];
         [self.textView setString:response.dataString];
     }
-}
-
-- (void)audioAlertCheckboxChanged:(id)sender {
-    NSButton *checkbox = (NSButton *)sender;
-    BOOL checkboxIsChecked = [checkbox state] == NSOnState;
-    [[NSUserDefaults standardUserDefaults] setBool:checkboxIsChecked forKey:@"AudioAlertsAreEnabled"];
 }
 
 

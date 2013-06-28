@@ -10,6 +10,8 @@
 		D880EC7E16DF2AD500310D84 /* icon-01.png in Resources */ = {isa = PBXBuildFile; fileRef = D880EC7D16DF2AD500310D84 /* icon-01.png */; };
 		D880EC8016DF2AE200310D84 /* icon-01.png in Resources */ = {isa = PBXBuildFile; fileRef = D880EC7F16DF2AE200310D84 /* icon-01.png */; };
 		D8C9C71B16FE92A000A380FD /* QueryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C9C71A16FE92A000A380FD /* QueryResponse.m */; };
+		D8CE5145177E11C900DDE0BF /* SettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CE5144177E11C900DDE0BF /* SettingsWindow.xib */; };
+		D8CE5149177E13CF00DDE0BF /* SettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CE5147177E13CF00DDE0BF /* SettingsWindowController.m */; };
 		DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
 		DD4F7C1513C30F9F00825C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1413C30F9F00825C6E /* main.m */; };
 		DD4F7C1C13C30F9F00825C6E /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1B13C30F9F00825C6E /* ApplicationDelegate.m */; };
@@ -31,6 +33,9 @@
 		D880EC7F16DF2AE200310D84 /* icon-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-01.png"; sourceTree = "<group>"; };
 		D8C9C71916FE92A000A380FD /* QueryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryResponse.h; sourceTree = "<group>"; };
 		D8C9C71A16FE92A000A380FD /* QueryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryResponse.m; sourceTree = "<group>"; };
+		D8CE5144177E11C900DDE0BF /* SettingsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsWindow.xib; path = Popup/SettingsWindow.xib; sourceTree = "<group>"; };
+		D8CE5146177E13CF00DDE0BF /* SettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindowController.h; sourceTree = "<group>"; };
+		D8CE5147177E13CF00DDE0BF /* SettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWindowController.m; sourceTree = "<group>"; };
 		DD4F7C0413C30F9F00825C6E /* Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4F7C0813C30F9F00825C6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD4F7C0B13C30F9F00825C6E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -127,6 +132,8 @@
 		DD4F7C2613C311DF00825C6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D8CE5146177E13CF00DDE0BF /* SettingsWindowController.h */,
+				D8CE5147177E13CF00DDE0BF /* SettingsWindowController.m */,
 				DD4F7C1A13C30F9F00825C6E /* ApplicationDelegate.h */,
 				DD4F7C1B13C30F9F00825C6E /* ApplicationDelegate.m */,
 				DD4F7C3613C317A500825C6E /* MenubarController.h */,
@@ -149,6 +156,7 @@
 		DD4F7C2913C3124300825C6E /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				D8CE5144177E11C900DDE0BF /* SettingsWindow.xib */,
 				DD4F7C1D13C30F9F00825C6E /* MainMenu.xib */,
 				DD4F7C4013C31B4A00825C6E /* Panel.xib */,
 			);
@@ -238,6 +246,7 @@
 				DDF4EFAE16C80AD30044D141 /* StatusHighlighted@2x.png in Resources */,
 				D880EC7E16DF2AD500310D84 /* icon-01.png in Resources */,
 				D880EC8016DF2AE200310D84 /* icon-01.png in Resources */,
+				D8CE5145177E11C900DDE0BF /* SettingsWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +265,7 @@
 				DD4F7C4413C31BD200825C6E /* Panel.m in Sources */,
 				DD4F7C4713C3208500825C6E /* BackgroundView.m in Sources */,
 				D8C9C71B16FE92A000A380FD /* QueryResponse.m in Sources */,
+				D8CE5149177E13CF00DDE0BF /* SettingsWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
