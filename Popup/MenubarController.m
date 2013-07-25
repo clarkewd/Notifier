@@ -42,7 +42,7 @@
     
     QueryResponse *response = [QueryResponse queryUrlWithString:urlString];
     
-    if ([response.error code] == kCFURLErrorNotConnectedToInternet) {
+    if ([response.error code]) {
         NSLog(@"%@", [response.error localizedDescription]);
         [self blockUpdates:10.];
         self.statusItemView.title = nil;
