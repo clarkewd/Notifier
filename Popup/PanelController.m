@@ -268,7 +268,7 @@
 - (IBAction)resetButtonClicked:(id)sender {
     NSLog(@"reset button clicked, sending reset URL\n");
     
-    NSString *urlString = @"http://www.nickmerrill.me/mail/reset/";
+    NSString *urlString = @"http://localhost.dev/xcode/?reset=1";
     
     [self closePanel];
     
@@ -293,7 +293,7 @@
     NSString *fontName = @"Source Code Pro";
     NSFont *defaultFont = [NSFont fontWithName:fontName size:14.0];
 
-    NSString *urlString = @"http://www.nickmerrill.me/mail/urgent/last/clean/";
+    NSString *urlString = @"http://localhost.dev/xcode/?urgent-last=clean";
     
     QueryResponse *response = [QueryResponse queryUrlWithString:urlString];
     

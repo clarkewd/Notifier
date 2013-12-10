@@ -38,7 +38,7 @@
     
     // beginning update
     
-    NSString *urlString = @"http://www.nickmerrill.me/mail/urgent/";
+    NSString *urlString = @"http://localhost.dev/xcode/";
     
     QueryResponse *response = [QueryResponse queryUrlWithString:urlString];
     
